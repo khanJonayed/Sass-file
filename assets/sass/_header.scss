@@ -1,0 +1,41 @@
+.header{
+	background-color: $header_color;
+	padding: 30px 0px;
+	@include clearfix;
+    
+	.container{
+		width: 80%;
+		margin: auto;
+
+		.logo{
+			width: 30%;
+			float: left;
+		}
+		.menu{
+			widows: 70%;
+			float: left;
+            
+			ul{
+				list-style: none;
+				text-align: right;
+	
+				li{
+					display: inline-block;
+                   
+					a{
+						text-decoration: none;
+						display: inline-block;
+						color: $content_color;
+						font-size: 16px;
+						padding: 5px 10px;
+						background-color: red;
+						&:hover{
+							background-color: darken(red, 20%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
